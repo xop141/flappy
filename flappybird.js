@@ -42,16 +42,16 @@ window.onload = function () {
     context = board.getContext("2d");
 
     birdImg = new Image();
-    birdImg.src = "./images/bird.png";
+    birdImg.src = "./bird.png";
     birdImg.onload = function () {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     };
 
     topPipeImg = new Image();
-    topPipeImg.src = "./images/pipeNorth.png";
+    topPipeImg.src = "./pipeNorth.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "./images/pipeSouth.png";
+    bottomPipeImg.src = "./pipeSouth.png";
 
     requestAnimationFrame(update);
     setInterval(placePipes, 1500);
